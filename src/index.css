@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 13%; /* #222222 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 349 100% 61%; /* #FF385C - Rausch */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 44%; /* #717171 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 97%; /* #F7F7F7 */
+    --muted-foreground: 0 0% 42%; /* #6A6A6A */
+
+    --accent: 349 100% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 41%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 87%; /* #DDDDDD */
+    --input: 0 0% 87%;
+    --ring: 0 0% 13%;
+
+    --radius: 8px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight text-ink;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-rausch text-white px-6 py-3 rounded-sm text-body-md font-medium transition-all duration-200 hover:bg-primary-active active:scale-95 disabled:bg-primary-disabled disabled:cursor-not-allowed cursor-pointer;
+  }
+
+  .btn-accent {
+    @apply btn-primary;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center bg-white text-ink border border-ink px-6 py-3 rounded-sm text-body-md font-medium transition-all duration-200 hover:bg-surfaceSoft active:scale-95 cursor-pointer;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center justify-center bg-white rounded-full p-2.5 border border-hairline hover:bg-surfaceSoft hover:shadow-airbnb transition-all duration-200 cursor-pointer;
+  }
+
+  .display-text {
+    @apply text-display-xl;
+  }
+
+  .section-title {
+    @apply text-display-md mb-sm;
+  }
+
+  .card-shadow {
+    @apply shadow-airbnb transition-shadow duration-200;
+  }
+
+  .airbnb-card {
+    @apply bg-white rounded-md overflow-hidden border border-hairlineSoft transition-all duration-200 hover:shadow-airbnb;
+  }
+
+  .search-orb {
+    @apply w-12 h-12 rounded-full bg-rausch flex items-center justify-center text-white shadow-sm;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-surfaceSoft;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-mutedSoft/30 rounded-full hover:bg-mutedSoft/50 transition-colors;
+  }
+}
+
