@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Men", slug: "men" },
-  { label: "Women", slug: "women" },
+  { label: "Kurta Pajama", slug: "kurta-pajama" },
+  { label: "Ladies Suits", slug: "ladies-suits" },
   { label: "Turban", slug: "turban" },
+  { label: "Pant Shirts", slug: "pant-shirts" },
   { label: "Sale", slug: "sale", isNew: true },
 ];
 
