@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <ShoppingBag size={20} className="text-rausch" strokeWidth={2.5} />
             <span className="font-sans text-lg font-bold tracking-tight text-ink leading-none">
-              ELITE<span className="text-rausch">ATTIRE</span>
+              Your logo
             </span>
           </Link>
 

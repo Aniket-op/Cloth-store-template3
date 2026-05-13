@@ -9,7 +9,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="flex flex-col gap-4 md:col-span-1">
           <span className="font-sans text-lg font-bold tracking-tight text-ink leading-none">
-            ELITE<span className="text-rausch">ATTIRE</span>
+            Your logo
           </span>
           <p className="text-[14px] text-mutedText leading-relaxed max-w-[220px]">
             Premium ethnic and contemporary clothing crafted for every occasion.
